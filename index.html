@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Timer</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="timer">
+	<div class="space"></div>
+	<label>
+		<input type="text">
+		<span class="unsure" id="s3">0</span>
+		<span class="unsure" id="s2">0</span>
+		<span class="unsure letter">m</span>
+		<span class="unsure" id="s1">0</span>
+		<span class="unsure" id="s0">0</span>
+		<div class="caret"></div>
+		<span class="unsure letter">s</span>
+	</label>
+	<div class="space"></div>
+</div>
+
+<div class="buttons">
+	<button id="start">
+		<span>Start</span>
+	</button>
+</div>
+
+<audio id="done">
+	<source src="https://cdn.realsgii2.dev/timer/sound_picker_track_320.ogg" type="audio/ogg">
+</audio>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
