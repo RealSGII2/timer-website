@@ -94,11 +94,12 @@ $('#start').addEventListener('click', () => {
 			document.body.classList.remove('running');
 			isRunning = false;
 			
-	$('#start span').innerText = 'Start'
+			$('#start span').innerText = 'Start'
 		} else {
-			document.body.classList.remove('done');
+			document.body.classList.remove('done', 'running');
 			$('audio').load();
 			isCleared = true;
+			isRunning = false;
 			$('#start span').innerText = 'Start'
 		}
 	}
